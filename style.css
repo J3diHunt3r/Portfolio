@@ -118,3 +118,20 @@
   background-color: white;
 }
 
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  #loader {
+    width: 10em;
+    height: 10em;
+    font-size: 25px;
+    box-sizing: border-box;
+    border-top: 0.3em solid hotpink;
+    border-radius: 50%;
+    position: absolute;
+    left: 16%;
+    top: 28%;
+    z-index: 1;
+    animation: rotating 2s ease-in-out infinite;
+    --direction: 1;
+  }
+}
