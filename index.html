@@ -12,6 +12,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 .fa{color: rgb(129, 129, 228) !important;}
 </style>
 <body class="w3-light-grey">
+  <body onload="myFunction()" style="margin:0;">
+    <div id="loader">
+      <span style="color: rgb(129, 129, 228) !important;">Loading...</span>
+    </div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -128,7 +133,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="southmetro.PNG" alt="Avatar" style="width:300px;height:200px; border-radius: 25px;">
+              <img src="northmetro.PNG" alt="Avatar" style="width:300px;height:200px; border-radius: 25px;">
             </div>
             <div class="flip-card-back">
               <a href="http://jesseobrien.net/library/"><h5>Library Orientation Site</h5></a>
@@ -143,7 +148,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="northmetro.PNG" alt="Avatar" style="width:300px;height:200px; border-radius: 25px;">
+              <img src="southmetro.PNG" alt="Avatar" style="width:300px;height:200px; border-radius: 25px;">
             </div>
             <div class="flip-card-back">
               <a href="https://calvinmoylan.com/RAD/"><h5>Movie Rental site</h5></a>
@@ -169,7 +174,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
       </div>
       <div>
-        <p>Official site</p>
+        <p>  </p>
+        
+          </form>
       </div>
     </div>
   </div>
@@ -183,4 +190,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </footer>
 
 </body>
+
+
+
+
+<script>
+  var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+  
 </html>
