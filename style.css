@@ -76,7 +76,7 @@
 }
 
 #loader::after {
-  border-top: 0.3em solid gold;
+  border-top: 0.3em solid rgb(172, 7, 187);
   transform: rotate(240deg);
 }
 
