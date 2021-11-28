@@ -134,4 +134,13 @@
     animation: rotating 2s ease-in-out infinite;
     --direction: 1;
   }
+    #w3-light-grey {
+    padding-top: 16px;
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }
+
+}
+
